@@ -8,8 +8,6 @@ describe('Производит заход на страничку ипериум
     it("ввод символов в отдельные поля и вход"), () => {
     cy.get("input[name=login]").type("johngold");
     cy.get("input[name=password]").type("Abc12345");
-    cy.get(
-      "span[class=(.dx-button-text > dx-template-wrapper).should('Войти')]"
-    ).click();
+    cy.get("span[class=(.dx-button-text > dx-template-wrapper).should('Войти')]").click();
   });
 });
